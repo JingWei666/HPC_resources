@@ -19,3 +19,13 @@ If, on the other hand, you are allowed to use Triton, by all.means, do it, unles
 
 As a sidenote, such a project could easily open a door at companies like NVIDiA, Meta, Google or AMD. So don't forget to blog about it if you do it, and maybe add benchmarks / power usage estimates.
 
+解析： 
+1. 核心任务：到底要你做什么？
+这个项目的目标是：在 NanoGPT-TK 这个开源项目中，用 ThunderKittens 框架实现一个《Addition is all you need》论文中提到的核心算子。
+
+论文内容（L-Mul）： 论文提出了一种叫 L-Mul（Linear-Complexity Multiplication） 的算法。核心思想是：在深度学习中，不再使用昂贵的“浮点乘法”，而是通过“加法和位移”来近似乘法。这样可以大幅降低功耗，且性能几乎不变。
+
+工具（ThunderKittens）： 这是斯坦福大学 HazyResearch 实验室开发的一个 C++ 模板库。它让你能用类似 Triton 的高级逻辑去写 CUDA。它封装了极其复杂的硬件底层（如 Tensor Cores 的使用、共享内存搬运），让你专注于“切片（Tiling）”逻辑。
+
+项目（NanoGPT-TK）： 这是著名的 NanoGPT（由 AI 大神 Andrej Karpathy 创建）的“高性能版”，使用了 ThunderKittens 进行底层加速。
+
