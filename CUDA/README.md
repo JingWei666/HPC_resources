@@ -1,4 +1,8 @@
+# CUDA学习路径
 
+## CUDA教学： https://zhuanlan.zhihu.com/p/34587739
+
+## 项目
 Ok, here's a project for you:
 
 Implement the "Addition is all you need" Kernel in a readable manner with lots of comments using ThunderKittens in NanoGPT-TK as an explanatory example and contribute it to their Open Sources repo.
