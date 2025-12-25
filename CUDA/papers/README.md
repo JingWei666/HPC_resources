@@ -1,4 +1,6 @@
-# Addition is all you need 笔记 
+# 论文笔记
+
+## Addition is all you need 笔记 
 
 文章介绍了在transformer架构中计算fp8和fp16浮点数时的计算机算子计算过程，展示计算算术公式，对公式的部分进行替换，以达到将浮点数相乘完全转换为加法操作。
 
